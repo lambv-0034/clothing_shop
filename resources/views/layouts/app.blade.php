@@ -32,11 +32,10 @@
   <div id="wrapper" class="clearfix">
     @include('shared.navbar')
     @yield('page-title')
-  </div>
-<div id="app">
-<main class="py-4">
     @yield('content')
-</main>
+    @include('shared.footer')
+  </div>
+<div>
 </div>
 <script src="{{ asset('js/plugins.js') }}"></script>
 <script src="{{ asset('js/functions.js') }}"></script>
