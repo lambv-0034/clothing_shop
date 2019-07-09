@@ -1,0 +1,21 @@
+{
+  "name": "clothing_shop",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Bui Van Lam <bui.van.lam@sun-asterisk.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lambv-0034/clothing_shop",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "git@github.com:jquery/jquery.git#^3.4.1",
+    "jquery.easing": "^1.3.1"
+  }
+}

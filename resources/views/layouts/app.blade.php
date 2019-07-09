@@ -39,8 +39,8 @@
 </div>
 <script src="{{ asset('js/plugins.js') }}"></script>
 <script src="{{ asset('js/functions.js') }}"></script>
-<script src="http://code.jquery.com/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
+<script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ asset('bower_components/jquery.easing/js/jquery.easing.min.js') }}"></script>
+@yield('script')
 </body>
 </html>
