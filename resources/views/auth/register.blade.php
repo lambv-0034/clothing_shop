@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
 <div class="content-wrap">
 <div class="container clearfix">
   <div class="tabs divcenter nobottommargin clearfix" id="tab-login-register" style="max-width: 500px;">
