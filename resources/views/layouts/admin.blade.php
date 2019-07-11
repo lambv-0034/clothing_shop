@@ -16,19 +16,19 @@
   <!-- Fonts -->
   <link rel="dns-prefetch" href="//fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <link href="{{ asset('bower_components/material-design-icons/iconfont/material-icons.css') }}" rel="stylesheet">
   <!-- Styles -->
-
+  <link href="{{ asset('bower_components/Font-Awesome/css/all.min.css') }}" rel="stylesheet">
   <link href="{{ asset('css/material/material-dashboard.css?v=2.1.1') }}" rel="stylesheet">
-  <!-- <link href="{{ asset('bower_components/datatables/media/css/jquery.dataTables.min.css') }}" rel="stylesheet">
-  <link src="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet"> -->
+  <link href="{{asset('bower_components/bootstrap-sweetalert/dist/sweetalert.css')}}" rel="stylesheet">     
   <link rel="stylesheet" href="{{ asset('css/bs-datatable.css') }}" type="text/css" />
   <script src="js/bs-datatable.js"></script>
+  
   @yield('styles')
 </head>
 
 <body>
+  @include('sweetalert::alert')
   <div id="wrapper" class="clearfix">
     @yield('page-title')
   </div>
@@ -110,16 +110,15 @@
         </footer>
       </div>
   </div>
-    <!-- Core JS Files   -->
   <script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
   <script src="{{ asset('js/core/popper.min.js') }}"></script>
   <script src="{{ asset('js/bs-datatable.js') }}"></script>
   <script src="{{ asset('bower_components/jquery.counterup/jquery.counterup.min.js') }}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-  <!-- <script src="{{ asset('bower_components/datatables/media/js/jquery.dataTables.min.js') }}"></script>
-  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> -->
-
+  <script src="{{asset('bower_components/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+  <script src="{{asset('bower_components/bootstrap-sweetalert/dist/sweetalert.min.js')}}"></script>
+  <script>src="{{asset('bower_components/bootstrap-sweetalert/dist/sweetalert.js')}}"</script>
   @yield('script')
 </body>
 

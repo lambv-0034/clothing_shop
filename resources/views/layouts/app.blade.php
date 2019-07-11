@@ -30,6 +30,7 @@
 </head>
 <body class="stretched">
   <div id="wrapper" class="clearfix">
+    @include('sweetalert::alert')
     @include('shared.navbar')
     @yield('page-title')
     @yield('content')
